@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: grey;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.quoteBox{
+  margin: 20px;
+  width: 35vw;
+  height: 40vh;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.containerTexts{
+  height: 80%;
+  width: 100%;
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.containerButtons{
+  height: 10vh;
+  width: 35vw;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.text{
+  margin: 0 5px;
+
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.author{
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.newQuote, .tweetQuote{
+  margin: 5px;
+  cursor: pointer;
+  height: 60%;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.newQuote{
+  font-size: 15px;
+  padding: 10px 35px;
+}
+.newQuote:hover, .tweetQuote:hover{
+  background-color: white !important;
+  color: blue;
+}
+.text > p{
+  font-size: 1.5em;
+  color: grey;
+}
